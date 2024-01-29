@@ -51,7 +51,8 @@ jobs:
                   prepare: |
                       yes | pkg update -y
                       pkg install -q -y git tree
-
+                      pip install --yes vncdotool
+                      
                   # Run the build and test
                   run: |
                       # Install GNU make(1) so we can use the instreqs target
